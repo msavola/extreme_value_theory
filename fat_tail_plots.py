@@ -9,8 +9,6 @@ Created on Tue Apr 27 08:35:08 2021
 #dual distributions to see potential indication of Paretian distributions
 #using the functions defined in file fat_tail_stats.py
 
-import aux_mi as am
-import main_mi as mm
 import numpy as np
 import scipy.stats as stats
 import os
