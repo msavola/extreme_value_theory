@@ -186,7 +186,8 @@ def plot_GPD_fit(fe130,fe130_orig,a_fe130,q,decl):
     #Asymptotic variance of the shape and scale parameters parameter
     var_s=(1+shape)**2/len(plot_x)
     sd_s=np.sqrt(var_s)
-    var_sc=(1+shape)*2/len(plot_x)
+    var_sc=(1+shape)*2*scale/len(plot_x)
+    sd_sc=np.sqrt(var_sc)
     
     
     #Do plots
@@ -207,7 +208,7 @@ def plot_GPD_fit(fe130,fe130_orig,a_fe130,q,decl):
     #Add textbox
     textstr=f"shape=\
             {np.round(shape,3)}+-{np.round(sd_s,5)}\n\
-            scale={np.round(scale)}+-{np.round(sd_s,5)}\n\
+            scale={np.round(scale)}+-{np.round(sd_sc,5)}\n\
             q={np.round(q,6)}\n\
             N={np.round(len(plot_x),0)}\n\
             u={np.round(np.amin(plot_x,0))}\n\
