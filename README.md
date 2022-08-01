@@ -11,4 +11,5 @@ File contents:
 -fat_tail_stats.py contains function for e.g. ordering the data, fitting a GPD, calculating PIckand and Hill estimators etc. (these are used by fat_tail_plots.py)
 -main_MI.py contains an object class with methods e.g. for calculating mutual information, and some of the methods are used in fat_tail_stats.py for manipulating data
 -aux.py contains auxiliary functions for main_MI.py
--plot_GPD_to_data_fast.py fits a GPD to the data after declustering it. The function doens't use .pkl data. Executing the file does the fitting and saves the produced figures.
+-plot_GPD_to_log_data_bb_new.py fits a GPD to the data after declustering it. The function doens't use .pkl data. Executing the file does the fitting and saves the produced figures. The file also contains a script for doing the declusgtering using Bayesian blocks, but combining the tools was not succesful here.
+-BayesBlocks.py contains the algorithm for the Bayesin block methodology (Jeffrey Scargle et al.)
