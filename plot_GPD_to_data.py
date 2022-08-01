@@ -5,8 +5,7 @@ Created on Mon Oct  4 14:28:00 2021
 
 @author: mikkosavola
 """
-import aux_mi as am
-import main_mi as mm
+
 import numpy as np
 import scipy.stats as stats
 import os
